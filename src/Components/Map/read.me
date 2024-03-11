@@ -1,0 +1,43 @@
+Documentation: MapComponent
+Index
+Overview
+Dependencies
+State Variables
+Effect Hook: Map Initialization
+Geocoder Configuration
+Draw Interaction Configuration
+Function: toggleFullscreen
+Function: handleZoomIn
+Function: handleZoomOut
+Function: calculateMeasurement
+Render Method
+1. Overview
+The MapComponent is a React functional component that renders an OpenLayers map with various functionalities such as drawing points, lines, and polygons, geocoding, toggling fullscreen mode, zooming in/out, and calculating measurements.
+
+2. Dependencies
+OpenLayers: A JavaScript library for displaying map data in web browsers.
+ol-geocoder: An OpenLayers plugin for geocoding functionality.
+3. State Variables
+isFullscreen: A boolean state variable to track whether the map is in fullscreen mode or not.
+mapInstance: A state variable to hold the reference to the OpenLayers Map instance.
+distance: A state variable to store the calculated measurement.
+4. Effect Hook: Map Initialization
+Initializes the OpenLayers Map instance and sets up layers, view, geocoding functionality, and draw interactions.
+Cleans up by removing the map target when the component unmounts.
+5. Geocoder Configuration
+Configures the geocoder plugin for searching places on the map.
+6. Draw Interaction Configuration
+Sets up draw interactions for drawing points, lines, and polygons on the map.
+7. Function: toggleFullscreen
+Toggles the fullscreen mode of the map by adding/removing a CSS class to the map container.
+8. Function: handleZoomIn
+Zooms in on the map when called.
+9. Function: handleZoomOut
+Zooms out on the map when called.
+10. Function: calculateMeasurement
+Calculates the total measurement (area for polygons, length for lines) of drawn features on the map.
+Updates the distance state variable with the calculated measurement.
+Displays the measurement in a popup message.
+11. Render Method
+Renders the map container, fullscreen button, zoom buttons, measurement display, and calculate measurement button.
+This documentation provides a comprehensive overview of the MapComponent and its functionalities, making it easier for developers to understand and work with the code.

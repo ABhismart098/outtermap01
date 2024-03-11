@@ -1,0 +1,36 @@
+/* mapComponent.css */
+
+.search-bar {
+  position: top;
+  top: 20px; /* Adjust the top position to move it closer to the top of the screen */
+  right: 10px;
+  width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 0 10px;
+}
+
+/* Map container */
+.map-container {
+  width: 100%;
+  height: calc(100% - 50px);
+  position: relative;
+  border: 2px solid #ccc;
+}
+
+/* Search bar */
+
+
+/* Fullscreen mode */
+.fullscreen-map {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  z-index: 9999;
+}
